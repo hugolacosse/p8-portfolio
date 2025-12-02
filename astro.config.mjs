@@ -6,6 +6,8 @@ import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://hugolacosse.github.io',
+  base: 'p8-portfolio',
   vite: {
       plugins: [tailwindcss()],
       server: {
