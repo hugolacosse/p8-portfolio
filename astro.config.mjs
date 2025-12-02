@@ -8,6 +8,9 @@ import icon from 'astro-icon';
 export default defineConfig({
   site: 'https://hugolacosse.github.io',
   base: '/p8-portfolio',
+  build: {
+    assets: 'assets'
+  },
   vite: {
       plugins: [tailwindcss()],
       server: {

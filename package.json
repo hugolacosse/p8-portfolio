@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "build:gh-page": "astro check && astro build --base=/p8-portfolio/",
     "preview": "astro preview",
     "astro": "astro"
   },
