@@ -1,0 +1,33 @@
+---
+import pp from '../assets/ppghibli.png';
+
+import Html from '../assets/logos/HTML5.svg';
+import Css from '../assets/logos/Css.svg';
+import Tailwind from '../assets/logos/Tailwind.svg';
+import Js from '../assets/logos/Js.svg';
+import Ts from '../assets/logos/Ts.svg';
+import Bash from '../assets/logos/Bash.svg';
+import Node from '../assets/logos/Node.svg';
+import Vite from '../assets/logos/Vite.svg';
+import React from '../assets/logos/React.svg';
+import Astrologo from '../assets/logos/Astrologo.svg';
+---
+
+<section id="#contact" class="flex flex-col justify-center items-center pt-32">
+    <img class="w-44 h-44 border-2 border-white rounded-full" src={pp.src} alt="Photo de profil" fetchpriority="high"/>
+    <h1 class="text-3xl md:text-4xl font-bold pt-12">Hugo Lacosse</h1>
+    <p class="text-xl md:text-2xl pt-6">Développeur Web</p>
+
+    <div class="flex flex-wrap justify-center items-baseline gap-6 max-w-[360px] md:max-w-[700px] pt-24 pb-24">
+		<Bash       class="h-8 w-8 md:h-20 md:w-20" />
+		<Html       class="h-8 w-8 md:h-20 md:w-20 fill-current text-white" />
+		<Css        class="h-8 w-8 md:h-20 md:w-20" />
+		<Tailwind   class="h-8 w-8 md:h-20 md:w-20" />
+		<Js         class="h-8 w-8 md:h-20 md:w-20 rounded-sm md:rounded-lg" />
+		<Ts         class="h-8 w-8 md:h-20 md:w-20 rounded-sm md:rounded-lg" />
+		<Node       class="h-8 w-8 md:h-20 md:w-20" />
+		<Vite       class="h-8 w-8 md:h-20 md:w-20" />
+		<Astrologo  class="h-8 w-8 md:h-20 md:w-20" />
+		<React      class="h-8 w-8 md:h-20 md:w-20" />
+	</div>
+</section>

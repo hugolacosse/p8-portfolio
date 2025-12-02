@@ -1,16 +1,19 @@
 ---
+import Layout from '../layouts/Layout.astro';
 
+import Hero from '../components/Hero.astro';
+import Skills from '../components/Skills.astro';
+import Projets from '../components/Projects.astro';
+import Contact from '../components/Contact.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Hello World</h1>
-	</body>
-</html>
+<Layout>
+	<Hero />
+		<!-- Competences / services / lien section contact -->    
+	<Skills />
+	<Projets />
+	<section>
+		<!-- Composants projets -->    
+	</section>
+	<Contact />
+</Layout>
