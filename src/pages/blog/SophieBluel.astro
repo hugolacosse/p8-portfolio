@@ -1,36 +1,26 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 
-
-import deskImg from '../../assets/booki/desktop.png';
-
-import starter from '../../assets/booki/starter.png';
-
-import decoupage from '../../assets/booki/decoupage.png';
-
-import rendu from '../../assets/booki/rendu.png';
-import rendu2 from '../../assets/booki/rendu2.png';
-
-import mobile1 from '../../assets/booki/01mobile.png';
-import mobile2 from '../../assets/booki/02mobile.png';
-import mobile3 from '../../assets/booki/03mobile.png';
-import mobile4 from '../../assets/booki/04mobile.png';
-import mobile5 from '../../assets/booki/05mobile.png';
-import mobile6 from '../../assets/booki/06mobile.png';
+import SBindex from     '../../assets/img/sophiebluel-webp/00sb-index.webp';
+import SBstatic from    '../../assets/img/sophiebluel-webp/01sb-static.webp';
+import SBfiltre from    '../../assets/img/sophiebluel-webp/02sb-filtres.webp';
+import SBlogin from     '../../assets/img/sophiebluel-webp/03sb-login.webp';
+import SBmodal1 from    '../../assets/img/sophiebluel-webp/04sb-modal1.webp';
+import SBmodal2 from    '../../assets/img/sophiebluel-webp/05sb-modal2.webp';
 ---
 
 <Layout>
     <section class="flex flex-col justify-center items-center">
         <article class="w-5/6 md:w-3/5 flex flex-col">
             <div class="flex flex-col w-full mt-8 md:mt-16 justify-center items-center">
-                <h1 class="text-4xl font-bold">Sophie Bluel</h1>
-                <img class="mt-16 h-45 md:h-90 object-cover rounded-md overflow-hidden" src={deskImg.src} alt="Photo de couverture du projet" fetchpriority="high"/>
+                <h1 class="text-4xl font-bold">Portfolio de Sophie Bluel</h1>
+                <img class="mt-8 h-45 md:h-90 object-cover rounded-md overflow-hidden" src={SBindex.src} alt="Photo de couverture du projet" fetchpriority="high"/>
             </div>
 
             <div class="mt-16">
-                <h2 class="text-2xl font-semibold">Scénario et mission</h2>
+                <h2 class="text-[#ffc576] text-2xl font-semibold">Scénario et mission</h2>
                 <p class="text-lg mt-4">
-                    La startup Booki souhaitait développer un site Internet pour permettre aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Ma mission était d'intégrer l'interface responsive de la page d'accueil du nouveau site de Booki en utilisant HTML et CSS, à partir d'une maquette réalisée sur Figma.
+                    Sophie Bluel souhaitait créer son portfolio numérique afin d'y exposer son travail. Ma mission principale était d'intégrer une page d'accueil dynamique et une page de connexion pour l'administrateur du site en utilisant HTML, CSS et JavaScript.
                 </p>
             </div>
 
@@ -40,75 +30,89 @@ import mobile6 from '../../assets/booki/06mobile.png';
                     <ul class="mt-2">
                         <li class="text-xl font-medium pt-2">- HTML</li>
                         <li class="text-xl font-medium pt-2">- CSS</li>
+                        <li class="text-xl font-medium pt-2">- JAVASCRIPT</li>
                     </ul>
                 </div>
                 <div class="flex flex-col grow">
                     <h3 class="text-[#ffc576] text-xl font-semibold">Outils</h3>
                     <ul class="mt-2">
                         <li class="text-xl font-medium pt-2">- Figma</li>
-                        <li class="text-xl font-medium pt-2">- Inkscape</li>
                         <li class="text-xl font-medium pt-2">- Github</li>
                         <li class="text-xl font-medium pt-2">- VS Code</li>
                     </ul>
                 </div>
             </div>
 
+            <div class="mt-16 w-full flex">
+                <div class="flex flex-col grow">
+                    <h3 class="text-[#ffc576] text-xl font-semibold">Compétences développées</h3>
+                    <ul class="mt-2">
+                        <li class="text-xl font-medium pt-2">- Manipuler les éléments du DOM avec JavaScript</li>
+                        <li class="text-xl font-medium pt-2">- Gérer les événements utilisateurs</li>
+                        <li class="text-xl font-medium pt-2">- Récupérer les données utilisateurs via des formulaires</li>
+                    </ul>
+                </div>
+            </div>
 
             <div class="mt-16">
-                <h2 class="text-2xl font-semibold">Réalisation du livrable</h2>
+                <h2 class="text-[#ffc576] text-2xl font-semibold">Réalisation du livrable</h2>
 
-                <p class="text-lg mt-12">Le projet de départ était composé d'un fichier <em>index.html</em>, d'un fichier <em>style.css</em> et d'images.</p>
+                <p class="text-lg mt-4">
+                    Le projet était composé d'un backend et d'un frontend, j'était chargé de développer le frontend.
+                    </br></br>
+                    Le backend permettait d'héberger les images du projet et à l'administrateur du site de s'identifier pour ajouter ou supprimer des projets ainsi que leur image.
+                    </br></br>
+                    Le frontend était composé d'un fichier <strong>index.html</strong> et d'un dossier <strong>assets/</strong> avec des images et un fichier <strong>style.css</strong>.
 
+                </p>
+
+                <h3 class="text-xl font-semibold mt-12 underline">Version de départ</h3>
                 <div class="w-full flex mt-8 align-start">
-                    <img class="h-45 md:h-70 object-cover rounded-md overflow-hidden" src={starter.src} alt="Photo de couverture du projet" fetchpriority="high"/>
+                    <img class="h-45 md:h-70 object-cover rounded-md overflow-hidden" src={SBstatic.src} alt="Photo de couverture du projet" fetchpriority="high"/>
                 </div>
 
                 <p class="text-lg mt-12">
-                    Pour réaliser le livrable, j'ai commencé par faire un découpage de la maquette pour simplifier l'écriture du code.
-                    Cela m'a permis d'identifier les différents composants de l'interface et les associer à des balises HTML.
+                    Pour réaliser le livrable, j'ai commencé par modifier la page d'accueil pour récupérer les images des projets de façon dynamique sur le backend avec Javascript. J'ai ensuite intégré un composant qui permettait de filtrer les projets affichés.
                 </p>
 
+                <h3 class="text-xl font-semibold mt-12 underline">Intégration des filtres</h3>
                 <div class="w-full flex mt-8 align-start">
-                    <img class="h-45 md:h-70 object-cover rounded-md overflow-hidden" src={decoupage.src} alt="Photo de couverture du projet" fetchpriority="high"/>
+                    <img class="h-45 md:h-70 object-cover rounded-md overflow-hidden" src={SBfiltre.src} alt="Photo de couverture du projet" fetchpriority="high"/>
                 </div>
 
                 <p class="text-lg mt-12">
-                    J'ai ensuite ajouté les différents composants de l'interface dans la page en m'assurant qu'ils soient responsive.
+                    J'ai ensuite intégré la page de login pour permettre à l'administrateur de s'identifier en communiquant avec le backend.
                 </p>
+
+                <h3 class="text-xl font-semibold mt-12 underline">Intégration de la page de login</h3>
+                <div class="w-full flex mt-8 align-start">
+                    <img class="h-45 md:h-70 object-cover rounded-md overflow-hidden" src={SBlogin.src} alt="Photo de couverture du projet" fetchpriority="high"/>
+                </div>
+
+                <p class="text-lg mt-12">
+                    Pour finir, j'ai intégré une fenêtre modale dans la page d'accueil pour permettre à l'administrateur de supprimer ou d'ajouter un projet en téléchargeant une image sur le backend.
+                </p>
+
+                <h3 class="text-xl font-semibold mt-12 underline">Intégration de la fenêtre modale</h3>
+                <div class="w-full flex mt-8 align-start">
+                    <img class="h-45 md:h-70 object-cover rounded-md overflow-hidden" src={SBmodal2.src} alt="Photo de couverture du projet" fetchpriority="high"/>
+                </div>
+                <div class="w-full flex mt-8 align-start">
+                    <img class="h-45 md:h-70 object-cover rounded-md overflow-hidden" src={SBmodal1.src} alt="Photo de couverture du projet" fetchpriority="high"/>
+                </div>
+
             </div>
 
-
-
-            <div class="w-full flex flex-wrap justify-start align-start">
-                <div class="flex mt-16 mr-8">
-                    <img class="h-45 md:h-70 object-cover rounded-md overflow-hidden" src={rendu.src} alt="Photo de couverture du projet" fetchpriority="high"/>
-                </div>
-                  <div class="flex mt-16">
-                    <img class="h-45 md:h-70 object-cover rounded-md overflow-hidden" src={rendu2.src} alt="Photo de couverture du projet" fetchpriority="high"/>
-                </div>
-            </div>
-
-
-            <div class="w-full flex flex-wrap justify-start align-start">
-                <div class="flex mt-16 mr-8">
-                    <img class="h-90 object-cover rounded-md overflow-hidden" src={mobile1.src} alt="Photo de couverture du projet" fetchpriority="high"/>
-                </div>
-                  <div class="flex mt-16 mr-8">
-                    <img class="h-90 object-cover rounded-md overflow-hidden" src={mobile2.src} alt="Photo de couverture du projet" fetchpriority="high"/>
-                </div>
-                <div class="flex mt-16 mr-8">
-                    <img class="h-90 object-cover rounded-md overflow-hidden" src={mobile3.src} alt="Photo de couverture du projet" fetchpriority="high"/>
-                </div>
-                <div class="flex mt-16 mr-8">
-                    <img class="h-90 object-cover rounded-md overflow-hidden" src={mobile4.src} alt="Photo de couverture du projet" fetchpriority="high"/>
-                </div>
-                  <div class="flex mt-16 mr-8">
-                    <img class="h-90 object-cover rounded-md overflow-hidden" src={mobile5.src} alt="Photo de couverture du projet" fetchpriority="high"/>
-                </div>
-                <div class="flex mt-16 mr-8">
-                    <img class="h-90 object-cover rounded-md overflow-hidden" src={mobile6.src} alt="Photo de couverture du projet" fetchpriority="high"/>
+            <div class="mt-16 mb-32 w-full flex">
+                <div class="flex flex-col grow">
+                    <h3 class="text-[#ffc576] text-xl font-semibold">Perspective d'amélioration</h3>
+                    <ul class="mt-2">
+                        <li class="text-xl font-medium pt-2">- Implémenter une interface responsive</li>
+                        <li class="text-xl font-medium pt-2">- Intégrer un bouton permettant aux visiteurs de 'Like' les projets</li>
+                    </ul>
                 </div>
             </div>
+
         </article>
     </section>
 </Layout>
